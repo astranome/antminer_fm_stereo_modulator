@@ -2,6 +2,8 @@
 
 **Stereo FM modulator based on Antminer S9 / Astra S9 FPGA board, without external DAC.** Direct Digital Synthesis (DDS) for experimental FM broadcasting.
 
+**Русская версия доступна:** [README на русском](README.md)
+
 [![Status: In Development](https://img.shields.io/badge/Status-In%20Development-orange)]()
 [![Platform](https://img.shields.io/badge/Platform-Zynq%20(Antminer%20S9)-lightgrey)]()
 
@@ -81,6 +83,33 @@ This is an **experimental project** for enthusiasts. The device may interfere wi
     ```bash
     killall vlc
     ```
+
+---
+
+## ❓ FAQ (Frequently Asked Questions)
+
+### What is the actual sound quality?
+**Pure stereo sound without analog distortion.** The only drawback is slight digital noise in silence, but it's completely unnoticeable when listening to music.
+
+### What is the actual range?
+**In urban conditions:** 100-200 meters  
+**In open areas with line of sight:** up to 300-400 meters  
+Range also depends on receiver sensitivity, interference presence, and antennas used.
+
+### How to transmit sound from a computer?
+Install the Axia LiveWire virtual sound card, and your computer will become a professional audio source for the transmitter.
+
+### How to connect via SSH?
+Connect via SSH to host **tx.local** (login **root**, no password).
+
+### Can the frequency be changed?
+Currently not, but this feature may appear in future versions (if they are developed).
+
+### How to increase power?
+This implementation doesn't support power increase, as using an amplifier would amplify noise along with the useful signal.
+
+### Are boards from other miners compatible?
+Yes, if they have Zynq 7010 and similar architecture.
 
 ---
 
