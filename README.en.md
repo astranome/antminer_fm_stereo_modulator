@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Zynq%20(Antminer%20S9)-lightgrey)]()
 
 ## ⚠️ Important Warning
-This is an **experimental project** for enthusiasts. The device may cause interference to other radio stations and services. Use with caution.
+This is an **experimental project** for enthusiasts. The device may interfere with other radio stations and services. Use with caution.
 
 ## 📋 Features
 *   **Full digital path:** FM signal generation directly in Zynq FPGA
@@ -33,15 +33,34 @@ This is an **experimental project** for enthusiasts. The device may cause interf
 
 *MPX signal spectrum in SDR#: visible L+R main channel (up to 15 kHz), 19 kHz pilot tone, L-R stereo subcarrier at 38 kHz and RDS at 57 kHz*
 
+### Board Preparation
+
+#### 1. Setting Jumpers for SD Card Boot
+![Jumpers for SD Boot](images/jumpers_sd_boot.png)
+
+*Set the jumpers in this configuration for booting from SD card*
+
+#### 2. Antenna Solder Point
+![Antenna Solder Point](images/antenna_solder_point.png)
+
+*Antenna solder point on the board - TXD9 contact on the back side*
+
 ---
 
 ## 🚀 Quick Start
 
-1.  **SD Card Image:** Download and write the image to a flash drive.
-2.  **Antenna:** Solder a ~78 cm wire to the **TXD9** contact on the **back side** of the board.
-3.  **Network:** Connect the board via Ethernet to a network with DHCP and internet access.
-4.  **Reception:** Tune your FM receiver to **96.0 MHz**. The carrier will appear shortly after power-on.
-5.  **Ready:** After system boot, a script will automatically start and internet radio broadcast will begin.
+1.  **SD Card Image:** Download and write the image to a flash drive:
+    [📥 **antminer_fm_sd_image.img.zip**](https://drive.google.com/uc?export=download&id=1rred3DOfegktfgZ9XB4t4mJ4obqpGZnq)
+
+2.  **Jumper Settings:** Set the jumpers on the board to the SD card boot position as shown in the photo above.
+
+3.  **Antenna:** Solder a ~78 cm wire to the **TXD9** contact on the **back side** of the board (see solder point photo).
+
+4.  **Network:** Connect the board via Ethernet to a network with DHCP and internet access.
+
+5.  **Reception:** Tune your FM receiver to **96.0 MHz**. The carrier will appear shortly after power-on.
+
+6.  **Ready:** After system boot, a script will automatically start and internet radio broadcast will begin.
 
 > ℹ️ **Note:** To disable automatic internet radio startup, comment out the line `/root/broadcast_internet_radio.sh` in `/etc/rc.local`.
 
@@ -72,7 +91,6 @@ The project is under active development. Many planned features are not yet imple
 **Priority tasks:**
 *   **RDS Encoder:** Implementation of software part for the already existing hardware modulator in FPGA
 *   **Management Interface:** Console and web interface for frequency setting, pre-emphasis control, modulation parameter monitoring, etc.
-*   **Testing and debugging:** Help with testing on different devices
 *   **Documentation:** Improving instructions and technical descriptions
 
 If you have experience with FPGA, SDR, embedded Linux, or web interface development — join the project!
