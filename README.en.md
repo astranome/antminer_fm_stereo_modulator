@@ -2,7 +2,7 @@
 
 **Stereo FM modulator based on Antminer S9 / Astra S9 FPGA board, without external DAC.** Direct Digital Synthesis (DDS) for experimental FM broadcasting.
 
-**Русская версия доступна:** [README на русском](README.md)
+**Russian version available:** [README in Russian](README.md)
 
 [![Status: In Development](https://img.shields.io/badge/Status-In%20Development-orange)]()
 [![Platform](https://img.shields.io/badge/Platform-Zynq%20(Antminer%20S9)-lightgrey)]()
@@ -16,7 +16,7 @@ This is an **experimental project** for enthusiasts. The device may interfere wi
 *   **Stereo sound:** MPX signal generation with pilot tone
 *   **RDS ready:** RDS modulator already implemented in FPGA, needs software part
 *   **Multiple audio sources:**
-    *   Internet radio (via VLC)
+    *   Internet radio (via VLC, MPC, gstreamer, madplay, etc.)
     *   Local audio files
     *   Axia LiveWire (AES67) streams
 *   **Low-cost solution:** Uses old mining hardware
@@ -52,7 +52,7 @@ This is an **experimental project** for enthusiasts. The device may interfere wi
 ## 🚀 Quick Start
 
 1.  **SD Card Image:** Download and write the image to a flash drive:
-    [📥 **antminer_fm_sd_image.img.zip**](https://drive.google.com/uc?export=download&id=1rred3DOfegktfgZ9XB4t4mJ4obqpGZnq)
+    [📥 **antminer_fm_sd_image.img.zip**](https://drive.google.com/file/d/1Pwia-9_7UBmRfj1oRfHILwK6f-1vbIpU/view?usp=sharing)
 
 2.  **Jumper Settings:** Set the jumpers on the board to the SD card boot position as shown in the photo above.
 
@@ -70,26 +70,27 @@ This is an **experimental project** for enthusiasts. The device may interfere wi
 
 ## 🛠 Usage
 
-*   **Test file:** If internet radio doesn't work:
+*   **Local file:** Play test audio file:
     ```bash
     ./play_song.sh
     ```
-*   **Axia LiveWire (for experiments):**
+*   **Internet radio:**
     ```bash
-    ./rx_aes67_livewire_ch51.sh
+    ./ep.sh
     ```
-    Channel 51 will be received.
-*   **Stop broadcasting:**
+    Stop broadcasting: `killall vlc`.
+*   **Axia LiveWire (AES67) playback:**
     ```bash
-    killall vlc
+    ./rx_livewire_aes67.sh [channel_number]
     ```
+    Example for channel 51: `./rx_livewire_aes67.sh 51`.
 
 ---
 
 ## ❓ FAQ (Frequently Asked Questions)
 
 ### What is the actual sound quality?
-**Pure stereo sound without analog distortion.** The only drawback is slight digital noise in silence, but it's completely unnoticeable when listening to music.
+**Pure stereo sound without analog distortion.** The only drawback - there is sometimes a chance to hear slight digital noise in silence, but in most cases it's unnoticeable.
 
 ### What is the actual range?
 **In urban conditions:** 100-200 meters  
@@ -109,7 +110,10 @@ Currently not, but this feature may appear in future versions (if they are devel
 This implementation doesn't support power increase, as using an amplifier would amplify noise along with the useful signal.
 
 ### Are boards from other miners compatible?
-Yes, if they have Zynq 7010 and similar architecture.
+Yes, if they have Zynq 70xx and similar architecture.
+
+### What audio level provides full deviation of +/-75kHz?
+Full deviation of +/-75 kHz, including RDS and pilot tone deviation, corresponds to audio level of -9dBFS.
 
 ---
 
@@ -120,6 +124,7 @@ The project is under active development. Many planned features are not yet imple
 **Priority tasks:**
 *   **RDS Encoder:** Implementation of software part for the already existing hardware modulator in FPGA
 *   **Management Interface:** Console and web interface for frequency setting, pre-emphasis control, modulation parameter monitoring, etc.
+*   **Multichannel capability:** With proper optimization, it will be possible to broadcast at least 2-4 radio stations simultaneously.
 *   **Documentation:** Improving instructions and technical descriptions
 
 If you have experience with FPGA, SDR, embedded Linux, or web interface development — join the project!
