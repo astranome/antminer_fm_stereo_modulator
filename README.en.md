@@ -116,7 +116,7 @@ Yes, if they have Zynq 70xx and similar architecture.
 Full deviation of +/-75 kHz, including RDS and pilot tone deviation, corresponds to audio level of -9dBFS.
 
 ### What is the output power level?
-When a power meter with a 50ohm wave impedance was connected directly, without matching elements, the power was around 16dBm, which is about 40mW.
+When a power meter with a 50ohm wave impedance was connected directly, without matching elements, the power was around 16mW.
 
 
 ---
