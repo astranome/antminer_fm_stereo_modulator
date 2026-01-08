@@ -64,7 +64,7 @@ This is an **experimental project** for enthusiasts. The device may interfere wi
 
 6.  **Ready:** After system boot, a script will automatically start and internet radio broadcast will begin.
 
-> ℹ️ **Note:** To disable automatic internet radio startup, comment out the line `/root/broadcast_internet_radio.sh` in `/etc/rc.local`.
+> ℹ️ **Note:** To disable automatic internet radio startup, comment out the line `/root/ep.sh` in `/etc/rc.local`.
 
 ---
 
@@ -114,6 +114,10 @@ Yes, if they have Zynq 70xx and similar architecture.
 
 ### What audio level provides full deviation of +/-75kHz?
 Full deviation of +/-75 kHz, including RDS and pilot tone deviation, corresponds to audio level of -9dBFS.
+
+### What is the output power level?
+When a power meter with a 50ohm wave impedance was connected directly, without matching elements, the power was around 16dBm, which is about 40mW.
+
 
 ---
 
