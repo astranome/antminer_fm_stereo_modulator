@@ -119,6 +119,7 @@ All settings are saved in the `/etc/fm_transmitter.conf` file.
     Example for channel 51: `./rx_livewire_aes67.sh 51`.
 
 ### How to output audio from StereoTool:
+![Настройка Stereo tool](images/stereo_tool.png)
 
 1.  In the StereoTool program, **enable** HD output.
 2.  In the dropdown menu, **select** LiveWire+ AES67 or Generic AES67.

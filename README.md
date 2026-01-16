@@ -120,6 +120,7 @@ gcc fm.c -o fm -lm
     Пример для 51-го канала: `./rx_livewire_aes67.sh 51`.
 
 ### Как вывести звук из StereoTool:
+![Настройка Stereo tool](images/stereo_tool.png)
 
 1.  В программе StereoTool **включите** HD output.
 2.  В выпадающем меню **выберите** LiveWire+ AES67 или Generic AES67.
