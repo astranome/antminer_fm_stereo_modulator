@@ -170,6 +170,11 @@ When connected directly to a power meter with a 50 Ohm characteristic impedance,
 
 ## 🤝 Contributing
 
+**Join the project discussion on Telegram:** [https://t.me/c/2207436230/31613](https://t.me/c/2207436230/31613)
+
+Some of the planned features are not yet implemented or require refinement, but you can already enjoy high-quality stereo sound.
+
+
 The project is under active development. Much of the planned functionality is not yet implemented or needs refinement, but you can already enjoy high-quality stereo sound.
 
 **Priority tasks:**
