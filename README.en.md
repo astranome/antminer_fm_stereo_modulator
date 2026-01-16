@@ -93,7 +93,7 @@ gcc fm.c -o fm -lm
 ![Project Architecture](images/ctrl_console.png)
 
 **Control keys:**
-*   `1-5` – Toggle corresponding parameter (TX, STEREO, RDS, MUTE, cycle PREENPHASIS).
+*   `1-5` – Toggle corresponding parameter (TX, STEREO, RDS, MUTE, Pre-emphasis).
 *   `F` – Change broadcast frequency.
 *   `A` – Enable auto-refresh of level indicators.
 *   `L` – Load configuration from file (`/etc/fm_transmitter.conf`).
