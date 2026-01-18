@@ -130,7 +130,7 @@ All settings are saved in the `/etc/fm_transmitter.conf` file.
     ```bash
     ./rx_livewire_aes67.sh 5001
     ```
-    Audio will be transmitted over the network via UDP Multicast — the network card's IP address is not important. Good luck!
+    Audio will be transmitted over the network via UDP Multicast — the network card's IP address is not important.
 
 ---
 
