@@ -90,7 +90,7 @@ gcc fm.c -o fm -lm
 ```
 
 **Example utility interface:**
-![Project Architecture](images/ctrl_console.png)
+![control panel](images/fm.gif)
 
 **Control keys:**
 *   `1-5` – Toggle corresponding parameter (TX, STEREO, RDS, MUTE, Pre-emphasis).
