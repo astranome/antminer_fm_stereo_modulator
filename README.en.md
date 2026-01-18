@@ -37,7 +37,7 @@ This is an **experimental project** for enthusiasts. The device may cause interf
 *Project schematic in Vivado with DDS and MPX modulator implementation*
 
 ### Spectrum in SDR#
-![Spectrum in SDR#](images/sdrsharp_spectrum.png)
+![Spectrum in SDR#](images/sdrsharp_spectrum.gif)
 
 *MPX signal spectrum in SDR#: main L+R channel (up to 15 kHz), 19 kHz pilot tone, L-R 38 kHz stereo subcarrier, and RDS at 57 kHz*
 

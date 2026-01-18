@@ -37,7 +37,7 @@
 *Схема проекта в Vivado с реализацией DDS и MPX модулятора*
 
 ### Спектр в SDR#
-![Спектр в SDR#](images/sdrsharp_spectrum.png)
+![Спектр в SDR#](images/sdrsharp_spectrum.gif)
 
 *Спектр MPX-сигнала в SDR#: виден основной канал L+R (до 15 kHz), пилот-тон 19 kHz, стереоподнесущая L-R 38 kHz и RDS на 57 kHz*
 
