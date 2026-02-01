@@ -58,7 +58,7 @@
 ## 🚀 Быстрый старт
 
 1.  **Образ SD-карты:** Скачайте и запишите образ на флешку:
-    [📥 **antminer_fm_sd_image.img.zip**](https://drive.google.com/file/d/1zJ9alWn_ooUUDolYVYJMz_-qFWlah9bX/view?usp=sharing)
+    [📥 **antminer_fm_sd_image.img.zip**](https://drive.google.com/file/d/1mO0ZNSZRj90bvflZF97XiqMUc6hTCgpA/view?usp=sharing)
 
 2.  **Установка джамперов:** Установите джамперы на плате в положение для загрузки с SD-карты, как показано на фото выше.
 
