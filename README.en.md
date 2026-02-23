@@ -58,7 +58,7 @@ This is an **experimental project** for enthusiasts. The device may cause interf
 ## 🚀 Quick Start
 
 1.  **SD Card Image:** Download and write the image to a flash drive:
-    [📥 **antminer_fm_sd_image.img.zip**](https://drive.google.com/file/d/1zJ9alWn_ooUUDolYVYJMz_-qFWlah9bX/view?usp=sharing)
+    [📥 **antminer_fm_sd_image.img.zip**](https://drive.google.com/file/d/1mO0ZNSZRj90bvflZF97XiqMUc6hTCgpA/view?usp=sharing)
 
 2.  **Set Jumpers:** Set the jumpers on the board to the SD card boot position, as shown in the photo above.
 
